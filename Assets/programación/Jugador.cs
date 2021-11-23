@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Jugador : MonoBehaviour
 {
+    [SerializeField] float fireRate;
     [SerializeField] float speed;
     public int ataqueDeEspada = 1;
+    float nextFire = 0;
 
     public Transform puntoDeAtaque;
     public float rangoDeAtaque = 0.5f;
     public LayerMask objetivos;
+
 
 
     public static bool llave1;
@@ -57,6 +60,13 @@ public class Jugador : MonoBehaviour
         }
     }
 
+    void romper()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+
+        }
+    }
     private void OnDrawGizmosSelected()
     {
         if (puntoDeAtaque == null)
