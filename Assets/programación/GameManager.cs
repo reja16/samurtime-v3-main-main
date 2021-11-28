@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         PauseGame();
-        contadorTiempo();
+        //contadorTiempo();
 
     }
     void contadorTiempo()
@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
             //tiempo.text = num.ToString();
             contador = 0;
         }
-        if (num >= 43f)
+        if (num >= 5f)
         {
             
             SceneManager.LoadScene(2);
@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
     }
     public void PasarCinematica()
     {
+
         SceneManager.LoadScene(2);
     }
 
